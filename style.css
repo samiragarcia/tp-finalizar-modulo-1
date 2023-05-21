@@ -3,3 +3,65 @@ body{
     place-content: center;
     display: grid;
 }
+
+.select{
+    width: 100px;
+    border-radius: 6px;
+    height: 22px;
+}
+
+.buttonGenerar{
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    background-color: aliceblue;
+    width: 30%;
+}
+
+.title{
+    font-family: cursive;
+    color: cornflowerblue;
+    font-size: -webkit-xxx-large;
+}
+
+.divDetalle{
+    background-color: gainsboro;
+    margin: inherit;
+    border-radius: 7px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.contTarjeta{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.tarjeta{
+    width: 20%;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.detalleTarjeta{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+}
+
+.titulo-tarjeta{
+    text-align: center;
+}
+
+.buttonComprar{
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    background-color: aliceblue;
+}

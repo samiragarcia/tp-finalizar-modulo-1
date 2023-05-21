@@ -83,33 +83,33 @@ function generar() {
         var tarjeta = "";
         switch (selectColores.value) {
             case "ninguno":
-                tarjeta += `<div><img src=` + imagenes[i] + ` width="100px" heigth="100px">`;
+                tarjeta += `<div class="tarjeta"><img src=` + imagenes[i] + ` width="100px" heigth="100px">`;
                 break;
             case "rojo-amarillo":
-                tarjeta += `<div style="background-color:` + rojoAmarillo[i] + `"> <img src=` + imagenes[i] + ` width="100px" heigth="100px">`;
+                tarjeta += `<div class="tarjeta" style="background-color:` + rojoAmarillo[i] + `"> <img src=` + imagenes[i] + ` width="100px" heigth="100px">`;
                 break;
             case "verde-violeta":
-                tarjeta += `<div style="background-color:` + verdeVioleta[i] + `"> <img src=` + imagenes[i] + ` width="100px" heigth="100px">`;
+                tarjeta += `<div class="tarjeta" style="background-color:` + verdeVioleta[i] + `"> <img src=` + imagenes[i] + ` width="100px" heigth="100px">`;
                 break;
             case "azul-gris":
-                tarjeta += `<div style="background-color:` + azulGris[i] + `"> <img src=` + imagenes[i] + ` width="100px" heigth="100px">`;
+                tarjeta += `<div class="tarjeta" style="background-color:` + azulGris[i] + `"> <img src=` + imagenes[i] + ` width="100px" heigth="100px">`;
                 break;
             default:
                 break;
         }
-            tarjeta += `<div> <h3>` + productos[i] + `</h3>` +
+            tarjeta += `<div class="detalleTarjeta"> <h3>` + productos[i] + `</h3>` +
             `<label>Seleccione pago</label>` +
-            `<select><option value="efectivo">Efectivo</option>` +
+            `<select class="select" ><option value="efectivo">Efectivo</option>` +
             `<option value="debito">Debito</option>` +
             `<option value="credito">Credito</option></select>` +
 
             `<label>Seleccione cantidades</label>` +
-            `<select>`;
+            `<select class="select" >`;
         for (var j = 1; j <= selectCantPermitida.value; j++) {
             tarjeta += `<option>` + j + `</option>`;
         }
         tarjeta += `</select>` +
-            `<button>Comprar</button>`;
+            `<button class="buttonComprar" >Comprar</button>`;
         +`</div> </div>`;
         divContTarjeta.innerHTML += tarjeta;
     }

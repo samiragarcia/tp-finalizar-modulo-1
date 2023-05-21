@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-    <h1>Supermercado Samii</h1>
+    <div class="titulo-tarjeta">
+    <h1 class="title" >Supermercado Samii</h1>
     <label for="cantidad-productos">Cantidad de productos a mostrar:</label>
-    <select name="cantidad-producto" id="select-producto">
+    <select class="select" name="cantidad-producto" id="select-producto">
         <option value="1">1</option>
         <option value="3">3</option>
         <option value="7">7</option>
@@ -19,7 +19,7 @@
     </select>
     <br>
     <label for="cantidad-permitida-productos">Cantidad permitida por cada producto:</label>
-    <select name="cantidad-permitida" id="select-cantidad-permitida">
+    <select class="select" name="cantidad-permitida" id="select-cantidad-permitida">
         <option value="1">1</option>
         <option value="15">15</option>
         <option value="25">25</option>
@@ -27,18 +27,19 @@
     </select>
     <br>
     <label for="colores">Colores</label>
-    <select name="selct-colores" id="select-colores">
+    <select class="select" name="selct-colores" id="select-colores">
         <option value="ninguno">Ninguno</option>
         <option value="rojo-amarillo">Rojo-Amarillo</option>
         <option value="verde-violeta">Verde-Violeta</option>
         <option value="azul-gris">Azul-Gris</option>
     </select>
+
+<div class="divDetalle" id="detalle">
 </div>
-<div id="detalle">
+<button style="width: 260px;" class="buttonGenerar" onclick="generar()">Generar</button>
 </div>
-<button onclick="generar()">Generar</button>
 <br>
-<div id="contenedor-tarjeta">
+<div class="contTarjeta" id="contenedor-tarjeta">
 </div>
 
     <script src="script.js"></script>
