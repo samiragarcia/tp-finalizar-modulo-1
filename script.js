@@ -74,7 +74,7 @@ var azulGris = [
     "#c7c7c7"
 ]
 
-//muestra un contenedor de las opciones seleccionadas por el usuario//
+//muestra un contenedor de las opciones seleccionadas por el usuario y realiza un for y un switch//
 
 function generar() {
     var divContTarjeta = document.querySelector("#contenedor-tarjeta");
