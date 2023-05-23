@@ -2,7 +2,8 @@ const selectProductos = document.querySelector("#select-producto");
 const selectCantPermitida = document.querySelector("#select-cantidad-permitida");
 const selectColores = document.querySelector("#select-colores");
 const divDetalle = document.querySelector("#detalle");
-/* const divContTarjeta = document.querySelector("#contenedor-tarjeta"); */
+
+//imagenes de productos//
 
 var imagenes = [
     "https://d2r9epyceweg5n.cloudfront.net/stores/001/151/835/products/77903100014311-327d3cc4d519e71bfc16270456767301-640-0.jpg",
@@ -16,58 +17,64 @@ var imagenes = [
     "https://jumboargentina.vtexassets.com/arquivos/ids/766445/Papas-Pringles-Original-X124gs-1-944089.jpg?v=638104306094430000",
     "https://www.paladini.com.ar/assets/img/productos/productos/danbo.png"
 
+    //nombre de productos//
+
 ]
 var productos = [
-    "Producto 1",
-    "Producto 2",
-    "Producto 3",
-    "Producto 4",
-    "Producto 5",
-    "Producto 6",
-    "Producto 7",
-    "Producto 8",
-    "Producto 9",
-    "Producto 10"
+    "Papas lays",
+    "Gomitas",
+    "Coca-cola sin azucar",
+    "Galletas pepitos",
+    "Galletas oreo",
+    "Leche serenisima",
+    "Yogurth yogs",
+    "Casancream",
+    "Papas pringles",
+    "Queso dambo"
 ];
 
+//colores alternado de tarjetas//
+
 var rojoAmarillo = [
-    "red",
-    "yellow",
-    "red",
-    "yellow",
-    "red",
-    "yellow",
-    "red",
-    "yellow",
-    "red",
-    "yellow"
+    "#edadad",
+    "#f4f49a",
+    "#edadad",
+    "#f4f49a",
+    "#edadad",
+    "#f4f49a",
+    "#edadad",
+    "#f4f49a",
+    "#edadad",
+    "#f4f49a"
 ]
 
 var verdeVioleta = [
-    "green",
-    "violet",
-    "green",
-    "violet",
-    "green",
-    "violet",
-    "green",
-    "violet",
-    "green",
-    "violet"
+    "#bceebc",
+    "#eecbee",
+    "#bceebc",
+    "#eecbee",
+    "#bceebc",
+    "#eecbee",
+    "#bceebc",
+    "#eecbee",
+    "#bceebc",
+    "#eecbee"
 ]
 
 var azulGris = [
-    "blue",
-    "grey",
-    "blue",
-    "grey",
-    "blue",
-    "grey",
-    "blue",
-    "grey",
-    "blue",
-    "grey"
+    "#b2b2fa",
+    "#c7c7c7",
+    "#b2b2fa",
+    "#c7c7c7",
+    "#b2b2fa",
+    "#c7c7c7",
+    "#b2b2fa",
+    "#c7c7c7",
+    "#b2b2fa",
+    "#c7c7c7"
 ]
+
+//muestra un contenedor de las opciones seleccionadas por el usuario//
 
 function generar() {
     var divContTarjeta = document.querySelector("#contenedor-tarjeta");
