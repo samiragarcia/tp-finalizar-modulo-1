@@ -2,6 +2,7 @@ body{
 
     place-content: center;
     display: grid;
+    background-color: rgb(255, 232, 249);
 }
 
 .select{
